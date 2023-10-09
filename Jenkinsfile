@@ -52,7 +52,7 @@ pipeline {
                 success {
                     echo '[Snyk] Security scan completed without issues.'
                     emailext(
-                        to: 'specified-email@example.com',
+                        to: 'sagargupta1827@gmail.com',
                         subject: "SUCCESS: Security Scan",
                         body: """Security scan completed without issues.""",
                         attachLog: true
@@ -61,7 +61,7 @@ pipeline {
                 failure {
                     echo '[Snyk] Security scan detected vulnerabilities.'
                     emailext(
-                        to: 'specified-email@example.com',
+                        to: 'sagargupta1827@gmail.com',
                         subject: "FAILURE: Security Scan",
                         body: """Security scan detected vulnerabilities. See attached logs.""",
                         attachLog: true
