@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo '[NPM] Building the code using Node Package Manager'
+                echo '[NPM] Building the code using Node Package Manager.'
             }
         }
 
